@@ -3,13 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <title>Home | Chris Cantwell</title>
+    <link rel="stylesheet" href="https://github.com/uswds/public-sans/blob/develop/fonts/webfonts/PublicSans-ExtraBold.woff">
+    <style>
+        @font-face {
+            font-family: "Public Sans";
+            src: 
+                url("static/css/fonts/PublicSans-Regular.woff") format("woff"), 
+                url("static/css/fonts/PublicSans-Regular.woff2") format("woff2");
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        .profile-pic {
+            border-radius: 25%;
+            max-width: 10%;
+            height: auto;
+            border: 7px solid #344E41;
+            padding: 10px;
+        }
+        /* Current Palette https://creativebooster.net/blogs/colors/green-color-palettes */
+        /* Current Font: Public Sans https://public-sans.digital.gov/ */
+        body {
+            background-color: #3a5a40;
+            color: #dad7cd;
+            font-family: "Public Sans", sans-serif;
+        }
+        .link:link {
+            color: #A3B18A;
+            background-color: none;
+        }
+        .link:visited {
+            color: #A3B18A;
+            background-color: none;
+        }
+        .link:hover {
+            background-color: #DAD7CD;
+        }
+    </style>
 </head>
 <body>
     <h1 style="text-align:center">Hello!</h1>
     <p style="text-align:center">
-        <img src="static/Profile Photo.jpg" alt="Headshot of Chris Cantwell" style="width: 20%">
+        <img class="profile-pic" src="static/Profile Photo.jpg" alt="Headshot of Chris Cantwell">
     </p>
-    <p>Welcome to Chris Cantwell's personal website, currently a work in progress.</p>
-    <p>Follow development of this site on <a href="https://github.com/Chris-Cantwell/chriscantwell-dot-us">GitHub</a></p>
+    <p>Welcome to Chris Cantwell's personal website, currently a very early work in progress.</p>
+    <p>Follow development of this site on <a class="link" href="https://github.com/Chris-Cantwell/chriscantwell-dot-us">GitHub</a></p>
+    
+    <h2>Who am I?</h2>
+
+    <p>I grew up in Marshfield, Massachusetts and currently live in Boston with my girlfriend, Marissa.</p>
+
+    <h2>What am I Working On?</h2>
+
+    <p>I currently work for the Commonwealth of Massachusetts as a Cybersecurity Analyst.</p>
+    <p>To further my cybersecurty skillset, I'm working through certification courses from Google and SANS.</p>
+    <p>I'm also working on <a class="link" href="https://github.com/CivicProcessing/website-nextjs">Civic Processing</a> with my friend April to share resources and context on opportunities at the intersection of tech and public impact.</p>
+
+    <h2>What Have I Done?</h2>
+    <p>I graduated from Harvard College in 2023 with a B.A. in Computer Science and Government. </p>
+    <p>I have worked in tech, including as a data science intern with Microsoft via RedCloud Consulting.</p>
+    <p>I have worked in government, including at the U.S. Department of Labor in the Office of Secretary Marty Walsh and on Capitol Hill in the Office of Congressman Bill Keating.</p>
+    <p>I have worked in voter outreach, including to help start up the <a class="link" href="https://voteschallenge.harvard.edu/home">Harvard Votes Challenge</a>'s work in data-driven organizing strategy and collaboration with neighboring colleges and universities.</p>
 </body>
 </html>
